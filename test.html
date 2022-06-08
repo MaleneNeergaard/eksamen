@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="refresh" content="3.5;url=test2.html" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="IMG/logo_mnn.png" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+   <div class="img-hover-zoom--point-zoom">
+  <img src="IMG/min_baggrund.webp" alt="This zooms-in really well and smooth">
+</div>
+
+<style>
+
+  img{
+    max-width: 100%;
+  }
+/* Point-zoom Container */
+.img-hover-zoom--point-zoom img {
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter 3s ease-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--point-zoom:hover img {
+  transform: scale(5);
+}
+</style>
+    </main>
+  </body>
+</html>

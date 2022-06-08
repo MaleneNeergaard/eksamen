@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="IMG/logo_mnn.png" />
+    <title>Document</title>
+  </head>
+  <body class="splash">
+
+    <div class="popup" onclick="myFunction()">Malene Neergaard Noes
+  <span class="popuptext" id="myPopup">* Eksil-Københavner <br> * Backend supporter <br>
+  * Frivillig i vågetjenesten <br> * Baggrund som event koordinator</span>
+</div>
+
+
+
+    <video id="myVideo">
+      <source src="IMG/video_test.mp4" type="video/mp4" />
+    </video>
+
+ 
+</head>
+
+    <div class="button-container-div">
+        <button class="play" onclick="playVid()" type="button">Play</button>
+    <button class="pause" onclick="pauseVid()" type="button">Pause</button>
+
+    </div>
+
+    <div class="om">* Eksil-Københavner <br> * Backend supporter <br>
+  * Frivillig i vågetjenesten <br> * Baggrund som event koordinator</div>
+  </body>
+</html>
+<script>
+
+
+
+/* When the user clicks on div, open the popup*/
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+  var vid = document.getElementById("myVideo");
+
+  function playVid() {
+    vid.play();
+  }
+
+  function pauseVid() {
+    vid.pause();
+  }
+</script>
+<style>
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa", cursive, sans-serif;
+    font-size: 20px;
+  }
+
+  body{
+  background: #aa9ff9;
+  }
+
+  
+  .om{
+    background-color: #fff;
+    color: #425c70;
+    width: 90%;
+    height: 130px;
+    margin-left: 14px;
+    margin-top: 30px;
+  }
+  #myVideo {
+    height: 100%;
+    width: 90%;
+    margin: 17px;
+    align-items: center;
+  
+  }
+  
+  button {
+    background-color:rgb(72, 69, 69);
+    width: 100px;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    font-family: "Comfortaa", cursive, sans-serif;
+  }
+ @media (min-width: 800px){
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa", cursive, sans-serif;
+    font-size: 28px;
+  }
+
+  body{
+  background: #aa9ff9;
+  }
+ 
+  .om{
+    background-color: #fff;
+    color: #425c70;
+    width: 90%;
+    height: 180px;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  #myVideo {
+    height: 100%;
+    width: 90%;
+    margin: 20px;
+    align-items: center;
+  
+  }
+  
+  button {
+    background-color:rgb(72, 69, 69);
+    width: 100px;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 200px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    font-family: "Comfortaa", cursive, sans-serif;
+  }
+
+ }
+
+  @media (min-width: 1200px) {
+    .splash {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: url(IMG/baggrund_om.svg);
+    }
+
+    .om{
+      display: none;
+    }
+      #myVideo {
+    height: 30%;
+    width: 37%;
+    margin-top: 16%;
+    margin-left: 15%;
+  }
+
+        .button-container-div {
+            width: 250px;
+            height: 70px;
+            margin-left: 650px;
+            margin-top: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  button {
+    background-color:rgb(72, 69, 69);
+    width: 100px;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    left: -100px;
+  }
+
+  }
+
+  /* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  top: -50px;
+  left: 120px;
+
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+
+</style>

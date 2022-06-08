@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+
+body {
+  background-color: #425c70;
+}
+header {
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 2vh;
+  color: #ffff7b;
+  overflow: hidden;
+  background: url("../IMG/min_baggrund.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Comfortaa", cursive, sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 5vh;
+    color: #ffff7b;
+    overflow: hidden;
+    background: url("../IMG/min_baggrund.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Comfortaa", cursive, sans-serif;
+  }
+}

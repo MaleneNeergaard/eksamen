@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5vw;
+  padding: 1.5vw;
+}
+
+main {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  max-height: 80vh;
+}
+
+aside {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1.5vw;
+    padding: 1.5vw;
+  }
+}
+
+main,
+aside {
+  height: 80vh;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+main {
+  background-image: linear-gradient(45deg, #b59af2 0%, #e1e8fd 60%);
+}
+
+aside {
+  background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
+}
