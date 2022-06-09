@@ -13,6 +13,20 @@ body {
   height: 130px;
   margin-left: 14px;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+.billed {
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
+}
+img {
+  width: 60%;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 2px;
 }
 
 #myVideo {
@@ -58,6 +72,18 @@ button {
     padding-top: 20px;
     margin-top: 30px;
   }
+  .billed {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
+  }
+  img {
+    width: 60%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 2px;
+  }
 
   #myVideo {
     height: 100%;
@@ -93,6 +119,10 @@ button {
   }
 
   .om {
+    display: none;
+  }
+
+  .billed {
     display: none;
   }
 

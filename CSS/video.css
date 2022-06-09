@@ -25,7 +25,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .video {
   width: 100%;
 }
@@ -112,4 +111,15 @@ input[type="range"]::-webkit-slider-thumb {
 
 .video-player:hover .video-progress {
   height: 20px;
+}
+@media screen and (max-width: 400px) {
+  .video-player {
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    align-self: flex-start;
+  }
+  .video {
+    width: 100%;
+  }
 }

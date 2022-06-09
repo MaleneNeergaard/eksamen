@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
 
+/* introside  -  mobil */
 body {
   background-color: #425c70;
 }
 header {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   text-align: center;
   padding-top: 2vh;
   color: #ffff7b;
   overflow: hidden;
-  background: url("../IMG/min_baggrund.webp");
+  background: url("../IMG/baggrund.webp");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Comfortaa", cursive, sans-serif;
 }
 
+/* introside  -  tablet */
 @media screen and (min-width: 750px) {
   header {
     height: 90vh;
@@ -24,7 +26,23 @@ header {
     padding-top: 5vh;
     color: #ffff7b;
     overflow: hidden;
-    background: url("../IMG/min_baggrund.webp");
+    background: url("../IMG/baggrund.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Comfortaa", cursive, sans-serif;
+  }
+}
+
+/* introside  -  web */
+@media screen and (min-width: 1400px) {
+  header {
+    height: 95vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vh;
+    color: #ffff7b;
+    overflow: hidden;
+    background: url("../IMG/baggrund.webp");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Comfortaa", cursive, sans-serif;
