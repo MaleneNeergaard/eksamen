@@ -131,7 +131,7 @@ img {
   background-color: #ffff7b;
 }
 
-/* grundlæggende web  -  mobil */
+/* animation  -  mobil */
 .info {
   background-color: #ffff7b;
   color: #425c70;
@@ -141,8 +141,33 @@ img {
   margin-top: 70px;
   padding: 5px;
 }
+.billeder_animation {
+  background-color: #ffff7b;
+  color: #425c70;
+  width: 80%;
+  height: 250px;
+  margin-left: 45px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-right: 190px;
+  padding-bottom: 15px;
+}
 
-/* grundlæggende web  -  tablet */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.billed_tekst {
+  font-size: 12px;
+  margin-left: 10px;
+}
+img {
+  max-height: 200px;
+}
+
+/* animation -  tablet */
 @media screen and (min-width: 750px) {
   .info {
     background-color: #ffff7b;
@@ -153,6 +178,134 @@ img {
     margin-top: 150px;
     padding: 5px;
   }
+  .billeder_animation {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 80%;
+    height: 250px;
+    margin-left: 90px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .billed_tekst {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  img {
+    max-height: 200px;
+  }
+}
+
+/* animation  -  web */
+@media screen and (min-width: 1400px) {
+  .info {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 70%;
+    height: 450px;
+    margin-left: 190px;
+    margin-top: 150px;
+    padding: 15px;
+  }
+
+  .billeder_animation {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 70%;
+    height: 250px;
+    margin-left: 190px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .billed_tekst {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  img {
+    max-height: 200px;
+  }
+}
+
+/* grundlæggende web -  mobil */
+.info {
+  background-color: #ffff7b;
+  color: #425c70;
+  width: 80%;
+  height: 600px;
+  margin-left: 45px;
+  margin-top: 70px;
+  padding: 5px;
+}
+.billeder_gw {
+  background-color: #ffff7b;
+  color: #425c70;
+  width: 80%;
+  height: 250px;
+  margin-left: 45px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-right: 190px;
+  padding-bottom: 15px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.billed_tekst {
+  font-size: 12px;
+  margin-left: 10px;
+}
+img {
+  max-height: 200px;
+}
+
+/* grundlæggende web -  tablet */
+@media screen and (min-width: 750px) {
+  .info {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 80%;
+    height: 600px;
+    margin-left: 90px;
+    margin-top: 150px;
+    padding: 5px;
+  }
+  .billeder_gw {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 80%;
+    height: 250px;
+    margin-left: 90px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .billed_tekst {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  img {
+    max-height: 200px;
+  }
 }
 
 /* grundlæggende web  -  web */
@@ -161,9 +314,32 @@ img {
     background-color: #ffff7b;
     color: #425c70;
     width: 70%;
-    height: 500px;
+    height: 450px;
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+  }
+
+  .billeder_gw {
+    background-color: #ffff7b;
+    color: #425c70;
+    width: 70%;
+    height: 250px;
+    margin-left: 190px;
+    margin-top: 150px;
+    padding: 15px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .billed_tekst {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  img {
+    max-height: 200px;
   }
 }
