@@ -6,102 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="icon" type="image/png" href="IMG/logo_mnn.png" />
-    <link rel="stylesheet" href="CSS/om.css">
-    <title>Om mig</title>
+    <link rel="stylesheet" href="CSS/om.css" />
+    <title>Om Malene</title>
   </head>
+
   <body class="splash">
+    <main>
+      <details class="popup" onclick="myFunction()">
+        <summary>Malene Neergaard Noes</summary>
+        <p class="popuptext" id="myPopup">
+          * Eksil-Københavner <br />
+          * Backend supporter <br />
+          * Frivillig i vågetjenesten <br />
+          * Baggrund som event koordinator
+        </p>
+      </details>
 
-    <div class="popup" onclick="myFunction()">Malene Neergaard Noes
-  <span class="popuptext" id="myPopup">* Eksil-Københavner <br> * Backend supporter <br>
-  * Frivillig i vågetjenesten <br> * Baggrund som event koordinator</span>
-</div>
+      <video id="myVideo">
+        <source src="IMG/video_test.mp4" type="video/mp4" />
+      </video>
 
-
-
-    <video id="myVideo">
-      <source src="IMG/video_test.mp4" type="video/mp4" />
-    </video>
-
- 
-
-
-    <div class="button-container-div">
+      <div class="button-container-div">
         <button class="play" onclick="playVid()" type="button">Play</button>
-    <button class="pause" onclick="pauseVid()" type="button">Pause</button>
-   
-    
-    <button onclick="volumeUp()" type="button">+</button>
-    <button onclick="volumeDown()" type="button">-</button>
+        <button class="pause" onclick="pauseVid()" type="button">Pause</button>
 
+        <button onclick="volumeUp()" type="button">+</button>
+        <button onclick="volumeDown()" type="button">-</button>
+      </div>
 
+      <div class="om">
+        * Eksil-Københavner <br />
+        * Backend supporter <br />
+        * Frivillig i vågetjenesten <br />
+        * Baggrund som event koordinator
+      </div>
 
-    </div>
+      <div class="billed"><img src="IMG/mnn.jpg" alt="Malene" /></div>
 
-    <div class="om">* Eksil-Københavner <br> * Backend supporter <br>
-  * Frivillig i vågetjenesten <br> * Baggrund som event koordinator</div>
+      <script>
+        var vid = document.getElementById("myVideo");
 
-  <div class="billed"> <img src="IMG/mnn.jpg" alt="Malene">
-  </div>
-    <script> 
-    
-    var vid = document.getElementById("myVideo");
+        function playVid() {
+          vid.play();
+        }
 
-function playVid() {
-  vid.play();
-}
+        function pauseVid() {
+          vid.pause();
+        }
 
-function pauseVid() {
-  vid.pause();
-}
+        var x = document.getElementById("myVideo");
 
-var x = document.getElementById("myVideo");
+        function getVolume() {
+          alert(x.volume);
+        }
 
-function getVolume() { 
-  alert(x.volume);
-} 
+        function volumeDown() {
+          x.volume = x.volume - 0.5;
+        }
 
-function volumeDown() { 
-  x.volume = x.volume-0.5;
-}
-   
-function volumeUp() { 
-   x.volume = x.volume+0.5;
-} 
+        function volumeUp() {
+          x.volume = x.volume + 0.5;
+        }
 
+        /* When the user clicks on div, open the popup*/
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
 
+        var vid = document.getElementById("myVideo");
 
+        function playVid() {
+          vid.play();
+        }
 
-
-
-
-// test2.html
-
-/* When the user clicks on div, open the popup*/
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-
-var vid = document.getElementById("myVideo");
-
-function playVid() {
-  vid.play();
-}
-
-function pauseVid() {
-  vid.pause();
-}</script>
-
+        function pauseVid() {
+          vid.pause();
+        }
+      </script>
+    </main>
   </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-</style>

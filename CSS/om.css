@@ -17,7 +17,6 @@ body {
 }
 .billed {
   margin: 10px;
-
   display: flex;
   justify-content: center;
   background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
@@ -128,9 +127,9 @@ button {
 
   #myVideo {
     height: 30%;
-    width: 37%;
+    width: 30%;
     margin-top: 16%;
-    margin-left: 20%;
+    margin-left: 21%;
   }
 
   .button-container-div {
