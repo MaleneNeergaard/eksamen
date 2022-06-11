@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+   
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,20 +27,55 @@
     </nav>
 
     <main>
-      <div class="info"></div>
+      <style>
+       * {
+  box-sizing: border-box;
+}
 
-      <div class="billeder_pilot">
-        <div class="column">
-          <figure>
-            <img src="IMG/splash.webp" alt="wireframe" />
-            <figcaption class="billed_tekst">
-              Splash billede, redesign <br />
-              På billedet gøres brug af "rule of third"
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column" style="background-color: grey"></div>
-      </div>
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+  height: 800px;
+  padding: 10px;
+  margin-left: 80px;
+  
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+ max-width: 80%;
+ 
+
+
+}
+.txtover { position:relative 
+} 
+.txtover figcaption { position:absolute; top:0; left:0
+ }
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Layoutdiagram</h2>
+    <img src="IMG/testbillede.png" alt=""> <br> Inspireret af "Good bye Lenin"
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Filmplakat</h2>
+    <img src="IMG/testbillede.png" alt="">
+  </div>
+</div>
     </main>
   </body>
 </html>

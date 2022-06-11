@@ -117,7 +117,7 @@ img {
   display: grid;
 }
 
-/*.et,
+.et,
 .to,
 .tre,
 .fire {
@@ -125,10 +125,6 @@ img {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
-}*/
-
-.fresh-mode {
-  background-color: #ffff7b;
 }
 
 /* animation  -  mobil */
@@ -136,10 +132,12 @@ img {
   background-color: #ffff7b;
   color: #425c70;
   width: 80%;
-  height: 600px;
+  height: fit-content;
   margin-left: 45px;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 5px;
+  resize: both;
+  overflow: auto;
 }
 .billeder_animation {
   background-color: #ffff7b;
@@ -177,6 +175,8 @@ img {
     margin-left: 90px;
     margin-top: 150px;
     padding: 5px;
+    resize: both;
+    overflow: auto;
   }
   .billeder_animation {
     background-color: #ffff7b;
@@ -187,7 +187,7 @@ img {
     margin-top: 50px;
     padding-bottom: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -199,7 +199,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* animation  -  web */
@@ -212,6 +212,8 @@ img {
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+    resize: both;
+    overflow: auto;
   }
 
   .billeder_animation {
@@ -223,7 +225,7 @@ img {
     margin-top: 50px;
     padding-bottom: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -235,7 +237,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* grundlæggende web -  mobil */
@@ -247,6 +249,8 @@ img {
   margin-left: 45px;
   margin-top: 70px;
   padding: 5px;
+  resize: both;
+  overflow: auto;
 }
 .billeder_gw {
   background-color: #ffff7b;
@@ -259,7 +263,7 @@ img {
   margin-right: 190px;
   padding-bottom: 15px;
 }
-/*.column {
+.column {
   float: left;
   width: 50%;
   padding: 10px;
@@ -271,7 +275,7 @@ img {
 }
 img {
   max-height: 200px;
-}*/
+}
 
 /* grundlæggende web -  tablet */
 @media screen and (min-width: 750px) {
@@ -283,6 +287,8 @@ img {
     margin-left: 90px;
     margin-top: 150px;
     padding: 5px;
+    resize: both;
+    overflow: auto;
   }
   .billeder_gw {
     background-color: #ffff7b;
@@ -298,14 +304,14 @@ img {
     width: 50%;
     padding: 10px;
   }
-/*
+
   .billed_tekst {
     font-size: 12px;
     margin-left: 10px;
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* grundlæggende web  -  web */
@@ -318,6 +324,8 @@ img {
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+    resize: both;
+    overflow: auto;
   }
 
   .billeder_gw {
@@ -329,7 +337,7 @@ img {
     margin-top: 150px;
     padding: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -341,7 +349,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*//
+  }
 }
 
 /* grundlæggende indhold -  mobil */
@@ -353,6 +361,8 @@ img {
   margin-left: 45px;
   margin-top: 70px;
   padding: 5px;
+  resize: both;
+  overflow: auto;
 }
 .billeder_indhold {
   background-color: #ffff7b;
@@ -365,7 +375,7 @@ img {
   margin-right: 190px;
   padding-bottom: 15px;
 }
-/*.column {
+.column {
   float: left;
   width: 50%;
   padding: 10px;
@@ -378,7 +388,7 @@ img {
 img {
   max-height: 200px;
 }
-*/
+
 /* grundlæggende indhold -  tablet */
 @media screen and (min-width: 750px) {
   .info {
@@ -389,6 +399,8 @@ img {
     margin-left: 90px;
     margin-top: 150px;
     padding: 5px;
+    resize: both;
+    overflow: auto;
   }
   .billeder_indhold {
     background-color: #ffff7b;
@@ -399,7 +411,7 @@ img {
     margin-top: 50px;
     padding-bottom: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -411,7 +423,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* grundlæggende indhold  -  web */
@@ -424,6 +436,8 @@ img {
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+    resize: both;
+    overflow: auto;
   }
 
   .billeder_indhold {
@@ -435,11 +449,11 @@ img {
     margin-top: 150px;
     padding: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
-  }*/
+  }
 
   .billed_tekst {
     font-size: 12px;
@@ -450,9 +464,9 @@ img {
     font-size: 12px;
     margin-left: 60px;
   }
-  /*img {
+  img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* grundlæggende ux -  mobil */
@@ -464,6 +478,8 @@ img {
   margin-left: 45px;
   margin-top: 70px;
   padding: 5px;
+  resize: both;
+  overflow: auto;
 }
 .billeder_ux {
   background-color: #ffff7b;
@@ -476,7 +492,7 @@ img {
   margin-right: 190px;
   padding-bottom: 15px;
 }
-/*.column {
+.column {
   float: left;
   width: 50%;
   padding: 10px;
@@ -488,7 +504,7 @@ img {
 }
 img {
   max-height: 200px;
-}*/
+}
 
 /* grundlæggende ux -  tablet */
 @media screen and (min-width: 750px) {
@@ -500,6 +516,8 @@ img {
     margin-left: 90px;
     margin-top: 150px;
     padding: 5px;
+    resize: both;
+    overflow: auto;
   }
   .billeder_ux {
     background-color: #ffff7b;
@@ -510,7 +528,7 @@ img {
     margin-top: 50px;
     padding-bottom: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -522,7 +540,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* grundlæggende ux  -  web */
@@ -535,6 +553,8 @@ img {
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+    resize: both;
+    overflow: auto;
   }
 
   .et_ux {
@@ -559,11 +579,11 @@ img {
     left: 20px;
   }
 
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
-  }*/
+  }
 
   .billed_tekst {
     font-size: 12px;
@@ -573,9 +593,9 @@ img {
     font-size: 12px;
     margin-left: 40px;
   }
-  /*img {
+  img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* pilotsite -  mobil */
@@ -587,6 +607,8 @@ img {
   margin-left: 45px;
   margin-top: 70px;
   padding: 5px;
+  resize: both;
+  overflow: auto;
 }
 .billeder_pilot {
   background-color: #ffff7b;
@@ -599,7 +621,7 @@ img {
   margin-right: 190px;
   padding-bottom: 15px;
 }
-/*.column {
+.column {
   float: left;
   width: 50%;
   padding: 10px;
@@ -611,7 +633,7 @@ img {
 }
 img {
   max-height: 200px;
-}*/
+}
 
 /* pilotsite -  tablet */
 @media screen and (min-width: 750px) {
@@ -623,6 +645,8 @@ img {
     margin-left: 90px;
     margin-top: 150px;
     padding: 5px;
+    resize: both;
+    overflow: auto;
   }
   .billeder_pilot {
     background-color: #ffff7b;
@@ -633,7 +657,7 @@ img {
     margin-top: 50px;
     padding-bottom: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -645,7 +669,7 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
 
 /* pilotsite  -  web */
@@ -658,8 +682,13 @@ img {
     margin-left: 190px;
     margin-top: 150px;
     padding: 15px;
+    resize: both;
+    overflow: auto;
   }
 
+  .film-plakat {
+    height: 100%;
+  }
   .billeder_pilot {
     background-color: #ffff7b;
     color: #425c70;
@@ -669,7 +698,7 @@ img {
     margin-top: 150px;
     padding: 15px;
   }
-  /*.column {
+  .column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -681,5 +710,5 @@ img {
   }
   img {
     max-height: 200px;
-  }*/
+  }
 }
