@@ -32,42 +32,106 @@
         <a class="header-links" href="forside.html">Retur til start</a>
       </div>
     </nav>
+    <header class="header">
+      <h1>Grundlæggende UX</h1>
+    </header>
 
     <main>
-      <div class="info_ux">
-        <div class="et_ux">
-          <img src="IMG/pitch_billede.webp" alt="grundlaeggende_web" />
+      <div class="grid_1-1-1-1">
+        <div class="et">
+          <img src="IMG/moodboard.webp" alt="moodboard" />
+        </div>
+        <div class="to">
+          <img
+            src="IMG/wireframe_haandtegnet.webp"
+            alt="Håndtegnet wireframe"
+          />
+        </div>
+        <div class="tre">
+          <img src="IMG/betaling.png" alt="betalingsvindue" />
+        </div>
+        <div class="fire">
+          <div class="slideshow-container" style="margin-left: 30%">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img
+                src="IMG/research1.png"
+                style="max-width: 100%"
+                alt="research1"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img
+                src="IMG/research2.png"
+                style="max-width: 100%"
+                alt="research2"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img
+                src="IMG/research3.png"
+                style="max-width: 100%"
+                alt="research3"
+              />
+            </div>
+          </div>
+          <a
+            class="prev"
+            onclick="plusSlides(-1)"
+            style="font-size: 40px; margin-right: 5%"
+            >❮</a
+          >
+          <a
+            class="next"
+            onclick="plusSlides(1)"
+            style="font-size: 40px; margin-right: 5%"
+            >❯</a
+          >
         </div>
         <br />
-        <a
-          class="pitch-link"
-          href="https://docs.google.com/presentation/d/1ewmU7D7h3VUeP9wnbQCm1rhvnWguNphFyjF48ue5u0w/edit?usp=sharing"
-          target="_blank"
-          >Stilpitch</a
-        >
-      </div>
 
-      <div class="billeder_ux">
-        <div class="column">
-          <figure>
-            <img src="IMG/moodboard.webp" alt="moodboard" />
-            <figcaption class="billed_tekst">
-              Moodboard til protype <br />
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column">
-          <figure>
-            <img
-              src="IMG/wireframe_haandtegnet.webp"
-              alt="Håndtegnet wireframe"
-            />
-            <figcaption class="billed_tekst2">
-              Håndtegnet wireframe <br />
-            </figcaption>
-          </figure>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
     </main>
   </body>
 </html>
