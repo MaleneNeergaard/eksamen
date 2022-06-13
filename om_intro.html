@@ -1,37 +1,62 @@
 <!DOCTYPE html>
-<html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="4;url=om.html" />
-    <meta name="robots" content="noindex" />
-    <link rel="icon" type="image/png" href="IMG/logo_mnn.png" />
-
-    <title>Portfolio</title>
-  </head>
+<meta http-equiv="refresh" content="5;url=om.html" />
+<html>
   <body>
-    <div class="img-hover-zoom--point-zoom">
-      <img
-        src="IMG/baggrund_om_intro.webp"
-        alt="This zooms-in really well and smooth"
-      />
+    <div class="vindue">
+      <img id="myImage" src="IMG/udenlys.png" />
+
+      <p>
+        <button class="doer" type="button" onclick="light(1)">
+          M. N. Noes
+        </button>
+      </p>
     </div>
-
-    <style>
-      img {
-        max-width: 100%;
-      }
-      /* Point-zoom Container */
-      .img-hover-zoom--point-zoom img {
-        transform-origin: 65% 75%;
-        transition: transform 2s, filter 4s ease-out;
-      }
-
-      /* The Transformation */
-      .img-hover-zoom--point-zoom:hover img {
-        transform: scale(5);
-      }
-    </style>
   </body>
 </html>
+<style>
+  @media screen and (max-width: 1400px) {
+    body {
+      background-color: #aa9ff9;
+    }
+    .vindue {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    body {
+      background-image: url("IMG/indgang.webp");
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-size: cover;
+    }
+
+    #myImage {
+      width: 80px;
+      height: 160px;
+      transform: rotate(180deg);
+      display: block;
+      margin-left: 600px;
+
+      margin-top: 83px;
+    }
+    .doer {
+      margin-left: 938px;
+      margin-top: 92px;
+      width: 122px;
+      height: 24px;
+      border: none;
+      background-color: white;
+    }
+  }
+</style>
+<script>
+  function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "IMG/udenlys.png";
+    } else {
+      pic = "IMG/medlys.png";
+    }
+    document.getElementById("myImage").src = pic;
+  }
+</script>

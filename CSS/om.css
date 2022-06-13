@@ -1,66 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Comfortaa", cursive, sans-serif;
-  font-size: 20px;
-  background: #aa9ff9;
-}
-
-.om {
-  background-color: #fff;
-  color: #425c70;
-  width: 90%;
-  height: 130px;
-  margin-left: 14px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.billed {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(45deg, #e1e8fd 0%, #b59af2 60%);
-}
-img {
-  width: 60%;
-  max-width: 100%;
-  object-fit: contain;
-  padding: 2px;
-}
-
-#myVideo {
-  height: 100%;
-  width: 90%;
-  margin: 17px;
-  align-items: center;
-}
-
-button {
-  background-color: rgb(72, 69, 69);
-  width: 100px;
-  font-size: 10px;
-  padding: 10px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  align-items: center;
-  font-family: "Comfortaa", cursive, sans-serif;
-}
-
-@media (min-width: 800px) {
-  html,
+@media (max-width: 1350px) {
   body {
     padding: 0;
     margin: 0;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 28px;
-  }
-
-  body {
+    font-family: "Comfortaa", cursive, sans-serif;
+    font-size: 20px;
     background: #aa9ff9;
   }
 
@@ -68,10 +12,10 @@ button {
     background-color: #fff;
     color: #425c70;
     width: 90%;
-    height: 180px;
-    margin-left: 20px;
-    padding-top: 20px;
+    height: 130px;
+    margin-left: 14px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .billed {
     margin: 10px;
@@ -89,17 +33,16 @@ button {
   #myVideo {
     height: 100%;
     width: 90%;
-    margin: 20px;
-    padding-left: 15px;
+    margin: 17px;
     align-items: center;
   }
 
   button {
     background-color: rgb(72, 69, 69);
     width: 100px;
-    font-size: 16px;
+    font-size: 10px;
     padding: 10px;
-    margin-left: 200px;
+    margin-left: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
     color: white;
@@ -108,8 +51,7 @@ button {
     font-family: "Comfortaa", cursive, sans-serif;
   }
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 1410px) {
   .splash {
     height: 100vh;
     width: 100vw;
@@ -130,7 +72,7 @@ button {
   #myVideo {
     width: 32%;
     margin-top: 15.5%;
-    margin-left: 23.5%;
+    margin-left: 28%;
   }
 
   .button-container-div {

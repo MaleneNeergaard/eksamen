@@ -28,8 +28,13 @@
 
     <main>
       <style>
+   @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Roboto:wght@300&display=swap');
        * {
   box-sizing: border-box;
+  
+}
+body{
+  background: #425c70; ;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -53,38 +58,31 @@ text-align: center;
 }
 
 .caption{
-   font-size: 25px;
+   color: black;
    font-weight: bolder;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-.BL {
-   position: absolute;
-   bottom: 150px;
-   left: 16px;
-}
+
 .TL{
    position: absolute;
    top: 80px;
-   right: 56px;
+   right: 65px;
    font-size: 12px;
 }
 .TR {
    position: absolute;
    top:200px;
-   right:110px;
+   right:80px;
    font-size: 40px;
 }
 .BR {
    position: absolute;
    bottom: 8px;
-   right: 16px;
+   text-align: center;
+   margin-left: 130px;
+   font-size: 8px;
 }
-.center {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
+
 img{
  max-width: 80%;
 }
@@ -101,18 +99,20 @@ img{
 
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" >
     <h2>Layoutdiagram</h2>
 
-    <img src="IMG/layout.png" alt=""> <br> Inspireret af "Good bye Lenin"
+    <img src="IMG/layout.png" alt="layout,filmplakat"> <br> Inspireret af "Good bye Lenin"
   </div>
 
-  <div class="column" style="background-color:#bbb;">
+  <div class="column" >
     <h2>Filmplakat</h2>
       <div class="imageContainer">
-    <img src="IMG/filmplakat.png" alt="" style="width: 100%;"> 
+    <img src="IMG/filmplakat.png" alt="filmplakat" > 
     <div class="caption TL">Malene Neergaard <br> Noes</div>
-    <div class="caption TR">Good day <br> Malene !</div></div>
+    <div class="caption TR">Good day <br> Malene !</div>
+    <div class="caption BR">En film af Malene Neergaard Noes - efter idé af Malene Neergaard Noes</div>
+  </div>
   </div>
 </div>
     </main>
