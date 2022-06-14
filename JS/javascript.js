@@ -9,7 +9,7 @@ const durationTimeElement = videoPlayer.querySelector(".duration");
 const progress = videoPlayer.querySelector(".video-progress");
 const progressBar = videoPlayer.querySelector(".video-progress-filled");
 
-//Play and Pause button
+//Play og Pause knapper
 playButton.addEventListener("click", (e) => {
   if (video.paused) {
     video.play();
@@ -25,7 +25,7 @@ volume.addEventListener("mousemove", (e) => {
   video.volume = e.target.value;
 });
 
-//current time and duration
+//tid og resterende tid
 const currentTime = () => {
   let currentMinutes = Math.floor(video.currentTime / 60);
   let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60);
@@ -40,13 +40,13 @@ const currentTime = () => {
 
 video.addEventListener("timeupdate", currentTime);
 
-//Progress bar
+//Viser hvor langt i proces
 video.addEventListener("timeupdate", () => {
   const percentage = (video.currentTime / video.duration) * 100;
   progressBar.style.width = `${percentage}%`;
 });
 
-//change progress bar on click
+//on click - til visning af proces
 progress.addEventListener("click", (e) => {
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = progressTime;
@@ -56,7 +56,7 @@ progress.addEventListener("click", (e) => {
 
 var play = document.getElementById("play");
 
-/* When the user clicks on div, open the popup*/
+/* pop up funktion*/
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
