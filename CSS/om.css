@@ -162,3 +162,42 @@
     opacity: 1;
   }
 }
+
+/* om_intro.html */
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: #aa9ff9;
+  }
+  .vindue {
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    background-image: url("../IMG/indgang.webp");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+
+  #myImage {
+    width: 80px;
+    height: 160px;
+    transform: rotate(180deg);
+    display: block;
+    margin-left: -75px;
+    margin-top: 83px;
+  }
+  .doer {
+    margin-left: 947px;
+    margin-top: 92px;
+    width: 120px;
+    height: 24px;
+    border: none;
+    background-color: white;
+    color: #425c70;
+    border-radius: 0%;
+    justify-content: center;
+  }
+}

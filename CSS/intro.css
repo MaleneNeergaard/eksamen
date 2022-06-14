@@ -30,6 +30,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Comfortaa", cursive, sans-serif;
+    font-size: 30px;
   }
 }
 
@@ -46,5 +47,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Comfortaa", cursive, sans-serif;
+    font-size: 40px;
   }
 }

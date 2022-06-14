@@ -1,3 +1,5 @@
+/* video.html */
+
 const videoPlayer = document.querySelector(".video-player");
 const video = videoPlayer.querySelector(".video");
 const playButton = videoPlayer.querySelector(".play-button");
@@ -49,3 +51,35 @@ progress.addEventListener("click", (e) => {
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = progressTime;
 });
+
+/* om.html */
+
+var play = document.getElementById("play");
+
+/* When the user clicks on div, open the popup*/
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+var vid = document.getElementById("myVideo");
+
+function playVid() {
+  vid.play();
+}
+
+function pauseVid() {
+  vid.pause();
+}
+
+/* om_intro.html */
+
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "IMG/udenlys.png";
+  } else {
+    pic = "IMG/medlys.png";
+  }
+  document.getElementById("myImage").src = pic;
+}

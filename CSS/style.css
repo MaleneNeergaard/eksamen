@@ -14,6 +14,15 @@ body {
 
   background: #425c70;
 }
+img {
+  min-width: 100%;
+  padding: 10px;
+}
+
+.favicon {
+  height: 400px;
+  align-self: center;
+}
 
 .grid_1-1-1-1 {
   display: grid;
@@ -136,4 +145,7 @@ img {
 .fire {
   resize: both;
   overflow: auto;
+}
+.tekst {
+  margin: 10px;
 }
